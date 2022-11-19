@@ -1,43 +1,70 @@
-html,
-body,
-* {
+*,
+body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Cairo", sans-serif;
 }
 
 body {
+  height: 100vh;
+  background: linear-gradient(296deg, #17a79d, #ffddb8);
+}
+
+body,
+main {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100vw;
+  text-align: center;
 }
 
-div {
-  display: flex;
-  flex-wrap: wrap;
-  flex-basis: 40%;
-}
 img {
-  flex-basis: 30%;
-  margin: 20px;
-}
-p {
-  color: #1aabb9;
-  font-size: 2em;
-  font-weight: 900;
-  margin: 40px 0;
-  margin-bottom: 20px;
+  width: 80%;
 }
 
+h1,
+p {
+  color: #3e273e;
+}
+h1 {
+  font-size: 22px;
+  margin: 30px 0;
+}
+
+p {
+  font-size: 20px;
+}
 a {
-  margin: 40px 0;
-  padding: 10px 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0;
+  padding: 15px 20px;
+  border: 2px solid #3e273e;
   border-radius: 50px;
-  background-color: #fb5f55;
   text-decoration: none;
-  font-size: 2em;
-  font-weight: 900;
-  color: white;
+}
+.icons {
+  width: 24px;
+  margin-right: 20px;
+}
+svg {
+  width: 100%;
+}
+@media (max-width: 550px) {
+  main {
+    padding: 0 10px;
+  }
+  img {
+    width: 50%;
+  }
+  a {
+    width: 100%;
+  }
+  .instagram,
+  .whatsapp {
+    width: 150%;
+  }
 }
