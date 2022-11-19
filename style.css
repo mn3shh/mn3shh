@@ -7,7 +7,7 @@ body {
 }
 
 body {
-  height: 100vh;
+  min-height: 100vh;
   background: linear-gradient(296deg, #17a79d, #ffddb8);
 }
 
@@ -20,8 +20,13 @@ main {
   text-align: center;
 }
 
+main {
+  padding: 0 20px;
+}
 img {
-  width: 80%;
+  margin-top: 20px;
+  width: 100%;
+  max-width: 600px;
 }
 
 h1,
@@ -56,12 +61,6 @@ svg {
   height: 30px;
 }
 @media (max-width: 550px) {
-  main {
-    padding: 0 10px;
-  }
-  img {
-    width: 50%;
-  }
   a {
     width: 100%;
   }
